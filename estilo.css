@@ -1,0 +1,118 @@
+#cabecalho {
+	background-color: #191970;
+	font-weight: bold;
+}
+
+#faca-login {
+	color: white;
+	position: absolute;
+	
+	right: 50;
+	top: 90;
+	font-family: Arial, sans-serif;
+}
+
+#logo {
+	width: 500px;
+	margin-left: 32%;
+	
+}
+
+#nav {
+
+}
+
+#ul-nav{
+	list-style-type: none;
+	display: flex;
+	width:90%;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	 
+}
+
+a {
+}
+
+
+
+a:hover {
+	color: #191970;
+	background:#ffffff;
+}
+
+#produtos{
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	list-style: none;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	margin-left: 3%;
+	text-align: center;
+}
+
+#precos-produtos{
+	display: flex;
+	width: 90%;
+	list-style: none;
+	font-family: Helvetica, sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 0%;
+}
+
+#descricao-produtos{
+	display: flex;
+	width: 90%;
+	list-style: none;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+	color:rgb(70, 64, 64)
+	
+}
+
+	
+
+#titulo-produtos{
+	font-size: 30px;
+	font-family: Arial, sans-serif;
+	margin-left: 5%;
+	font-weight: bold;
+	color: rgb(70, 64, 64) 
+}
+
+
+figcaption {
+	color: #ffffff;
+	text-align: center;
+	background-color: #191970;
+}
+
+#rodape{
+	width: 100%;
+	height: 100px;
+	background-color:#191970	;
+}
+
+.link-rodape{
+	color: white;
+	font-size: 20px;
+}
+
+p{
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
