@@ -11,6 +11,7 @@
 		  line-height: 0.7;
 		}
 		</style>
+		<script src="index.js" defer></script>
 </head>
 <body>
 
@@ -43,6 +44,15 @@
 	</header>
 
 
+	<div class="carrossel">
+		<div class="container-carrossel" id="img">
+			<img class="img-carrossel" src="imagens/superofertas.png">
+			<img class="img-carrossel" src="imagens/notebookpromo.png">
+			<img class="img-carrossel" src="imagens/promo1 (2).png">
+		</div>
+	</div>
+
+
 	
 	<section id="secao1">
 	
@@ -53,7 +63,7 @@
 		
 				<li>
 					<a href="links/iphone11.html">
-						<img src="imagens/iphone11.jpg" width= 230px>
+					<img id="iphone11" onmouseover="mudarImagem(id, 'imagens/iphonedescri.png')" onmouseout="voltarImagem(id, 'imagens/iphone11.jpg')" src="imagens/iphone11.jpg" width= 230px>
 			<p>
 						<figcaption>IPHONE 11</figcaption>
 						</a>
@@ -66,7 +76,7 @@
 			
 				<li>
 					<a href="links/g30.html">
-					<img src="imagens/motog30.jpg" width= 245px>
+					<img id="g30" onmouseover="mudarImagem(id, 'imagens/g30descri.png')" onmouseout="voltarImagem(id, 'imagens/motog30.jpg')" src="imagens/motog30.jpg" width= 245px>
 			<p>
 					<figcaption id="terceiroimg">MOTOROLA G30</figcaption>
 					</a> 
@@ -77,7 +87,7 @@
 		
 				<li>
 					<a href="links/s22.html">
-					<img src="imagens/s22.jpg" width= 245px>
+					<img id="s22" onmouseover="mudarImagem(id, 'imagens/samsungdescri.png')" onmouseout="voltarImagem(id, 'imagens/s22.jpg')" src="imagens/s22.jpg" width= 245px>
 			<p>
 					<figcaption id="primeiroimg">GALAXY S22</figcaption>
 					</a>
@@ -89,7 +99,7 @@
 	
 				<li>
 					<a href="links/a71.html">
-					<img src="imagens/a71.jpg" width= 170px>
+					<img id="a71" onmouseover="mudarImagem(id, 'imagens/a71descri.png')" onmouseout="voltarImagem(id, 'imagens/a71.jpg')" src="imagens/a71.jpg" width= 170px>
 			<p>
 					<figcaption id="segundoimg">SAMSUNG GALAXY A71</figcaption>
 				</a>
@@ -108,7 +118,7 @@
 		
 				<li>
 					<a href="links/macbook.html">
-					<img src="imagens/macbook.jpg" width= 250px>
+					<img id="mac" onmouseover="mudarImagem(id, 'imagens/macdescri.png')" onmouseout="voltarImagem(id, 'imagens/macbook.jpg')"src="imagens/macbook.jpg" width= 250px>
 			<p>
 					<figcaption>MACBOOK PRO</figcaption>
 					</a>
@@ -121,7 +131,7 @@
 		
 				<li>
 					<a href="links/tabs4.html">
-					<img src="imagens/tabs4.jpg" width= 320px>
+					<img id="tab" onmouseover="mudarImagem(id, 'imagens/tabdescri.png')" onmouseout="voltarImagem(id, 'imagens/tabs4.jpg')" src="imagens/tabs4.jpg" width= 320px>
 			<p>
 					<figcaption id="segundoimg">TAB S4</figcaption>
 					</a>
@@ -133,7 +143,7 @@
 		
 				<li>
 					<a href="links/computador.html">
-					<img src="imagens/dpc.jpg" width= 303px>
+					<img id="i5" onmouseover="mudarImagem(id, 'imagens/i5descri.png')" onmouseout="voltarImagem(id, 'imagens/dpc.jpg')" src="imagens/dpc.jpg" width= 303px>
 			<p>
 					<figcaption id="terceiroimg">COMPUTADOR i5</figcaption>
 					</a>
@@ -145,7 +155,7 @@
 	
 				<li>
 					<a href="links/samsungbook.html">
-					<img src="imagens/notebook.jpg" width= 232px>
+					<img id="samsungbook" onmouseover="mudarImagem(id, 'imagens/sambookdescri.png')" onmouseout="voltarImagem(id, 'imagens/notebook.jpg')" src="imagens/notebook.jpg" width= 232px>
 				<p>
 					<figcaption id="quartoimg">SAMSUNG BOOK</figcaption>
 					</a>
@@ -165,7 +175,7 @@
 		
 				<li>
 					<a href="links/iphone11.html">
-						<img src="imagens/iphone11.jpg" width= 225px>
+						<img  id="iphonedescri" onmouseover="mudarImagem(id, 'imagens/iphonedescri.png')" onmouseout="voltarImagem(id, 'imagens/iphone11.jpg')" src="imagens/iphone11.jpg" width= 225px>
 			<p>
 						<figcaption>IPHONE 11</figcaption>
 						</a>
@@ -178,7 +188,7 @@
 			
 				<li>
 					<a href="links/g30.html">
-						<img src="imagens/motog30.jpg" width= 245px>
+						<img id="g30descri" onmouseover="mudarImagem(id, 'imagens/g30descri.png')" onmouseout="voltarImagem(id, 'imagens/motog30.jpg')" src="imagens/motog30.jpg" width= 245px>
 						<p>
 								<figcaption id="terceiroimg">MOTOROLA G30</figcaption>
 								</a> 
@@ -189,7 +199,7 @@
 		
 				<li>
 					<a href="links/s22.html">
-						<img src="imagens/s22.jpg" width= 245px>
+						<img  id="s22descri" onmouseover="mudarImagem(id, 'imagens/samsungdescri.png')" onmouseout="voltarImagem(id, 'imagens/s22.jpg')" src="imagens/s22.jpg" width= 245px>
 						<p>
 								<figcaption id="primeiroimg">GALAXY S22</figcaption>
 								</a>
@@ -201,7 +211,7 @@
 	
 				<li>
 					<a href="links/a71.html">
-					<img src="imagens/a71.jpg" width= 170px>
+					<img id="a71descri" onmouseover="mudarImagem(id, 'imagens/a71descri.png')" onmouseout="voltarImagem(id, 'imagens/a71.jpg')" src="imagens/a71.jpg" width= 170px>
 			<p>
 					<figcaption id="segundoimg">SAMSUNG GALAXY A71</figcaption>
 				</a>
@@ -217,7 +227,7 @@
 		
 				<li>
 					<a href="links/macbook.html">
-					<img src="imagens/macbook.jpg" width= 250px>
+					<img id="macdescri" onmouseover="mudarImagem(id, 'imagens/macdescri.png')" onmouseout="voltarImagem(id, 'imagens/macbook.jpg')" src="imagens/macbook.jpg" width= 250px>
 					<p>
 						<figcaption>MACBOOK PRO</figcaption>
 						</a>
@@ -229,7 +239,7 @@
 		
 				<li>
 					<a href="links/tabs4.html">
-					<img src="imagens/tabs4.jpg" width= 320px>
+					<img id="tabdescri" onmouseover="mudarImagem(id, 'imagens/tabdescri.png')" onmouseout="voltarImagem(id, 'imagens/tabs4.jpg')" src="imagens/tabs4.jpg" width= 320px>
 					<p>
 						<figcaption id="segundoimg">TAB S4</figcaption>
 						</a>
@@ -241,7 +251,7 @@
 		
 				<li>
 					<a href="links/computador.html">
-					<img src="imagens/dpc.jpg" width= 303px>
+					<img  id="i5descri" onmouseover="mudarImagem(id, 'imagens/i5descri.png')" onmouseout="voltarImagem(id, 'imagens/dpc.jpg')" src="imagens/dpc.jpg" width= 303px>
 					<p>
 						<figcaption id="terceiroimg">COMPUTADOR i5</figcaption>
 						</a>
@@ -253,7 +263,7 @@
 	
 				<li>
 					<a href="links/samsungbook.html">
-					<img src="imagens/notebook.jpg" width= 233px>
+					<img id="sambook" onmouseover="mudarImagem(id, 'imagens/sambookdescri.png')" onmouseout="voltarImagem(id, 'imagens/notebook.jpg')" src="imagens/notebook.jpg" width= 233px>
 					<p>
 						<figcaption id="quartoimg">SAMSUNG BOOK</figcaption>
 						</a>
