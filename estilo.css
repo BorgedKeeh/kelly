@@ -116,3 +116,25 @@ p{
 	font-weight: bold;
 }
 
+.carrossel {
+	overflow: hidden;
+	width: 1480px;
+	height: 150x;
+}
+
+.container-carrossel {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	transform: translateX(0);
+}
+
+.img-carrossel {
+	object-fit: cover;
+	width: 100%;
+	height: 105px;
+}
+
+#iphone11:hover {
+	src: url(images/1.png);
+}
+
